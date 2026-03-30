@@ -22,7 +22,7 @@ class UpdateListProjectRequest extends FormRequest
             'status' => ['sometimes', 'in:pending,active,completed,cancelled'],
             'start_date' => ['sometimes', 'date'],
             'end_date' => ['sometimes', 'date'],
-            'notes' => ['sometimes', 'string'],
+            'notes' => ['nullable','sometimes', 'string'],
             'project_type' => ['sometimes', 'string', 'max:50'],
         ];
     }
